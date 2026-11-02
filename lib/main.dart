@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Atelier 2'),
+          title: const Text('Atelier 3'),
           centerTitle: true,
           backgroundColor: Colors.purpleAccent,
         ),
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
               const SizedBox(height: 20),
 
               const Text(
-                'Découvrez comment construire une interface simple et élégante.',
+                'Profitez de la beauté de la nature et découvrez des paysages magnifiques.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16),
               ),
@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {
                   print("Tu as cliqué sur TextButton.");
                 },
-                child: const Text('TextButton'),
+                child: const Text('Button'),
               ),
             ],
           ),
