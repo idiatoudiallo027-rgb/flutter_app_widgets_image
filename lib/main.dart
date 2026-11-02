@@ -36,7 +36,10 @@ class MyApp extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              Image.network('https://picsum.photos/200', width: 200),
+              Image.network(
+                'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
+                width: 200,
+              ),
 
               const SizedBox(height: 20),
 
@@ -44,6 +47,33 @@ class MyApp extends StatelessWidget {
                 'Découvrez comment construire une interface simple et élégante.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 30),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      print("Tu as cliqué sur Commencer.");
+                    },
+                    child: const Text('Commencer'),
+                  ),
+
+                  OutlinedButton(
+                    onPressed: () {
+                      print("Tu as cliqué sur En savoir plus.");
+                    },
+                    child: const Text('En savoir plus'),
+                  ),
+                ],
+              ),
+
+              TextButton(
+                onPressed: () {
+                  print("Tu as cliqué sur TextButton.");
+                },
+                child: const Text('TextButton'),
               ),
             ],
           ),
